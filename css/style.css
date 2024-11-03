@@ -1,0 +1,403 @@
+
+*
+{
+    box-sizing: border-box;
+    font-family: var(--first-font);
+}
+
+:root
+{
+    --first-font: "Montserrat", sans-serif;
+    --second-font: "Poppins", sans-serif;
+}
+
+
+header
+{
+    background:linear-gradient( rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)) , url(../imgs/bg.jpg) ;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav{
+    font-family: var(--first-font);
+}
+
+header section h2
+{
+    font-size: 3.5rem;
+}
+
+header section h3
+{
+    font-size: 4.1rem;
+    font-weight: 100;
+}
+
+@media (max-width:640px)
+{
+    header section h3
+{
+    font-size: 2rem;
+}
+}
+
+
+/* about */
+#about 
+{
+    font-family: var(--second-font);
+}
+
+
+
+.about-content h2
+{
+    font-family: var(--first-font);
+    font-weight: 800;
+    color: #333;
+}
+
+.about-content .span
+{
+    letter-spacing: 2px;
+    font-size: .9rem;
+}
+
+.progress
+{
+    --bs-progress-height: 1.6rem;
+}
+
+.about-but
+{
+    font-size: 14px;    
+}
+
+.about-but .but1{
+    color: #343434;
+    background-color: black;
+    padding: .5rem 1.5rem;
+    border-radius: 5px;
+    border: black 1px solid;
+    color: white;
+    transition: .5s;
+
+}
+
+.about-but .but1:hover
+{
+    background-color: transparent;
+    border: 1px black solid;
+    color: black;
+}
+
+.about-but .but2{
+    color: #343434;
+    background-color: transparent;
+    padding: .5rem 1.5rem;
+    border-radius: 5px;
+    border: none;
+    color: black;
+    border: 1px solid black;
+    transition: .5s;
+
+}
+
+.about-but .but2:hover
+{
+    background-color: transparent;
+    color: white;
+    background-color: black;
+}
+
+
+/* services */
+#services
+{
+    background-color: #F7F7F7;
+}
+ 
+ h2 
+{
+    font-weight: 900;
+    color: #333;
+    font-size: 2.5rem;
+    position: relative;
+}
+
+
+
+#services .card-content i{
+    font-size: 1.5rem;
+    background-color: #F7F7F7;
+    padding: 1rem;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin-bottom: .3rem;
+    transition: .5s;
+}
+
+#services .card-content:hover i
+{
+    background-color: black;
+    color: white;
+}
+.card-content p
+{
+    font-size: 15px;
+}
+
+
+
+/* protoflio */
+.father{
+    position: relative;  
+    overflow: hidden;
+
+}
+
+.father:hover .child{
+   opacity: 1;
+}
+
+.child
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    margin: 5px;
+    text-align: center;
+    transition: 1s;
+   opacity: 0;
+    
+}
+
+.child h4
+{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.child div i
+{
+    background-color: black;
+    color: white;
+    padding: 3px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: black 1px solid;
+}
+
+.child div i:hover
+{
+    background-color: transparent;
+   
+    color: black;
+}
+
+@media(max-width:768px)
+{
+    .navbar ul {
+        background-color: white;
+        text-align: center;
+       padding-top:20px ;
+       padding-bottom:20px ;
+       
+    }
+
+    .navbar ul li a {
+        gap: 10px;
+        color: black !important; 
+        font-size: 14px;
+    }
+}
+
+.nav-pills .nav-link.active
+{
+    border-bottom:2px solid black ;
+    background-color: white;
+}
+
+/* clients */
+#clients
+{
+    background-color: #F7F7F7;
+}
+
+#clients .envato
+{
+    font-size: 12px;
+    font-weight: 700;
+    color: grey;
+}
+
+#clients .ft
+{
+    font-family: var(--second-font);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+
+/* info */
+#info .num
+{
+    font-weight: 800;
+    font-size: var(--first-font);
+    color: #333;
+}
+
+#info i
+{
+    color: #333;
+}
+
+
+
+/* team */
+#team
+{
+    background-color: #F7F7F7;
+}
+
+.e7twaa img
+{
+    
+    transition: .5s;
+}
+
+.e7twaa:hover img {
+    transform: scale(1.2);
+
+}
+
+
+
+.layer-team
+{
+    transition: .7s;
+    opacity: 0;
+} 
+
+.inner-team:hover .layer-team
+{
+    opacity: 1;
+    transform: rotatey(360deg);
+}
+
+.layer-team i{
+   
+    background-color: black;
+    color: white;
+}
+
+.layer-team i:hover
+{
+    background-color: white;
+    color: #000000;
+}
+
+
+/*contact */
+
+.inner-contact
+{
+    font-family: var(--first-font-font);
+}
+
+.inner-contact span
+{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.inner-contact i
+{
+    background-color:#F4F4F4
+    ;transition: .5s;
+}
+
+.inner-contact i:hover
+{
+    background-color: #000000;
+    color: white;
+}
+
+.input input
+{
+    background-color: #F4F4F4;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.input input:focus
+{
+    box-shadow: none;
+    border: none;
+    background-color: #F4F4F4;
+}
+
+.text-area textarea
+{
+    background-color: #F4F4F4;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.text-area textarea:focus
+{
+   
+    border: none;
+    background-color: #F4F4F4;
+    box-shadow: none;
+}
+
+form button
+{
+    font-size: 14px;
+    transition: .5s;
+    background-color: black;
+    color: white;
+
+}
+
+form button:hover
+{
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+}
+
+.navbar{
+    background-color: #00000070;
+   
+}
+
+
+
+
+
+/* footer */
+footer
+{
+    background-color: #1C1C1C;
+}
+
+footer p
+{
+    font-size: 14px;
+}
